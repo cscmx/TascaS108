@@ -12,15 +12,17 @@ class SpeedRadarSensorTest extends TestCase
         $this->assertSame("Too Slow", $result);
 
     }
-    public function testisAdecuate() //<= 60
+    public function testisAdequate() //<= 60
     {
         $speedRadarSensor = new SpeedRadarSensor(55);
         $result = $speedRadarSensor->speedSensor();
-        $this->assertSame("Is Adecuate", $result);
+        $this->assertSame("Is Adequate", $result);
     }
     public function testisFast() //<= 80
     {
-
+        $speedRadarSensor = new SpeedRadarSensor(75);
+        $result = $speedRadarSensor->speedSensor();
+        $this->assertSame("Is Fast", $result);
     }
     public function testisTooFast() //<= 100
     {
