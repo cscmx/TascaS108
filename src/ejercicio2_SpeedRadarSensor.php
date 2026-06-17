@@ -7,9 +7,14 @@ class SpeedRadarSensor
     public function speedSensor(): string
     {
         if ($this->speed < 30) 
-            {
-                return "Too Slow";
-            }
+        {
+            return "Too Slow";
+        }
+        elseif ($this->speed <= 60) 
+        {
+            return "Is Adequate";
+        }
+
     }
     
 }
