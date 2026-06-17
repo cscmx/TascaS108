@@ -14,7 +14,10 @@ class SpeedRadarSensor
         {
             return "Is Adequate";
         }
-
+        elseif ($this->speed <= 80)
+        {
+            return "Is Fast";
+        }
     }
     
 }
