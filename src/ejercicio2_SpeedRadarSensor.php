@@ -22,6 +22,10 @@ class SpeedRadarSensor
         {
             return "is too fast";
         }
+        else 
+        {
+            return "way too fast";
+        }
     }
     
 }
