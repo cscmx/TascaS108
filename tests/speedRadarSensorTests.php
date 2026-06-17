@@ -5,25 +5,28 @@ require_once 'src/ejercicio2_SpeedRadarSensor.php';
 
 class SpeedRadarSensorTest extends TestCase
 {
-    public function testisTooSlow ()
+    public function testisTooSlow () // < 30
+    {
+        $speedRadarSensor = new SpeedRadarSensor(25);
+        $result = $speedRadarSensor->speedSensor();
+        $this->assertSame("Too Slow", $result);
+
+    }
+    public function testisAdecuate() //<= 60
     {
 
     }
-    public function testisAdecuate()
+    public function testisFast() //<= 80
     {
 
     }
-    public function testisFast() 
+    public function testisTooFast() //<= 100
     {
 
     }
-    public function testisTooFast()
+    public function testisDangerous() //el resto ??
     {
 
-    }
-    public function testisDangerous() 
-    {
-        
     }
 }
 
