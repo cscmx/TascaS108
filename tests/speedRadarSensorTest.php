@@ -50,7 +50,7 @@ class SpeedRadarSensorTest extends TestCase
 
     }
 
-    static public function SpeedSensorDataProvider(): array  //METODO PUBLICO SIEMPRE
+    static public function SpeedSensorDataProvider(): array  //METODO PUBLICO (& estático) SIEMPRE
     {
         return array (
             array(25, "too slow"),
