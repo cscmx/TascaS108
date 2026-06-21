@@ -50,7 +50,8 @@ class numberCheckerTest extends TestCase
     {
         return array (
             array(0, false),
-            array(1, true)
+            array(1, true),
+            array(-2, false)
         );
     }
 
@@ -58,7 +59,9 @@ class numberCheckerTest extends TestCase
     {
         return array (
             array (1, false),
-            array(2, true)
+            array(2, true),
+            array(-2, true),
+            array(-1, false)
         );
     }
 
